@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin DashBoard</title>
-    <link rel="stylesheet" href="./src/assets/styles/modern-normalize.css">    </link>
+    <link rel="stylesheet" href="./src/assets/styles/modern-normalize.css">
+    </link>
     <link rel="stylesheet" href="./src/assets/styles/global.css">
     </link>
 </head>
@@ -60,28 +61,41 @@
         </div>
         <div class="header">
             <div class="header__start">
-                <div class="header__search"><img src="" alt=""><input type="text"></div>
+                <div class="header__search"><span class="mdi mdi-magnify"></span> <input type="text"
+                        class="header__input"> </input></div>
                 <div class="header__user">
-                    <img src="" alt="" class="header__notification">
-                    <img src="" alt="" class="header__user-image">
-                    <img src="" alt="" class="header__user-text">
+                    <span class="mdi mdi-bell-outline"></span>
+                    <img src="https://i.playground.ru/p/s71UQCMD3xNzWMfF0JirTQ.jpeg" alt="user_img"
+                        class="header__user-image">
+                    <p class="header__user-text">Константин Дрягин</p>
                 </div>
             </div>
             <div class="header__end">
                 <div class="header__greeting">
-                    <img src="" alt="">
-                    <p class="header__hi"></p>
-                    <p class="header__name"></p>
+                    <img class="header__end-image" src="https://i.playground.ru/p/s71UQCMD3xNzWMfF0JirTQ.jpeg"
+                        alt="user_img">
+                    <div class="header__name">
+                        <p class="header__hi">Привет,</p>
+                        <p class="header__name">Константин Дрягин(@konsatntin)</p>
+                    </div>
                 </div>
                 <div class="header__buttons">
-                    <button></button>
-                    <button></button>
-                    <button> </button>
+                    <button>Новый</button>
+                    <button>Загрузить</button>
+                    <button>Поделиться</button>
                 </div>
             </div>
         </div>
         <div class="projects">
-            <div class="projects__yours"></div>
+            <div class="projects__yours">
+                <h2>Ваши проекты</h2>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"></div>
+                <div class="projects__card"> </div>
+            </div>
             <div class="projects__announsments"></div>
             <div class="projects__trending"> </div>
         </div>
