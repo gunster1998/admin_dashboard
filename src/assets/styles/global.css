@@ -51,6 +51,10 @@
   #root, #__next {
     isolation: isolate;
   }
+  * {
+    box-sizing: border-box;
+  }
+  
 
   
 .wrapper{
