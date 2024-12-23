@@ -3,6 +3,8 @@
 
 :root {
     --menu-color: #1b92d3;
+    font-family: "Roboto", serif;
+    font-style: normal;
 }
 
 :root {
@@ -50,6 +52,7 @@
     isolation: isolate;
   }
 
+  
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 8fr;
@@ -170,21 +173,18 @@
 }
 
 .header__hi {
-  font-family: "Roboto", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 22px;
 }
 
 .header__name {
-  font-family: "Roboto", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 32px;
 }
 
 button {
-  font-family: "Roboto", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 22px;
@@ -210,4 +210,173 @@ button {
 
 .header__end {
   padding-top: 20px;
+}
+
+.projects {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.projects__announsments {
+  display: grid;
+  grid-template-columns: repeat(1,minmax(300px,1fr));
+  grid-template-rows: 20px 1fr 1fr;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  padding: 20px;
+  gap: 40px;
+}
+
+.announsments__wrapper {
+  display: grid;
+  grid-auto-rows:min-content;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.projects__trending {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.projects__yours {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(300px,1fr));
+  grid-template-rows: 20px 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.projects__yours-content {
+  grid-column: 1/3;
+  grid-row: 1/2;
+
+}
+
+
+
+.projects__title--style {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000001;
+}
+
+.projects__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 40px;
+  background-color: white;
+  border-radius: 20px ;
+  padding: 30px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.projects__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px; /* Ширина полоски */
+  height: 100%; /* Высота полоски */
+  background: #facc15; /* Желтый цвет полоски */
+}
+
+
+
+.projects__title {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000001;
+}
+
+.projects__description {
+  font-weight: 300;
+  font-size: 18px;
+  color: #6d6d6d;
+}
+
+.projects__card-icon {
+  display: flex;
+  gap: 15px;
+}
+
+.projects__card-icon {
+  display: flex;
+  align-items:end;
+  justify-content: end;
+  gap: 15px;
+}
+
+.projects__announsments-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000001;
+}
+
+.projects__announsments-text {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #6d6d6d;
+}
+
+.projects__announsments-card {
+  padding-bottom: 15px;
+  border-bottom: 0.1px solid rgb(180, 180, 180,0.5)  ;
+}
+
+
+.projects__announsments-card:last-child  {
+  border-bottom:none ;
+}
+
+.projects__trending-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.projects__trending-card {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.projects__trending {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 30px;
+  margin: 20px;
+}
+
+.trending__wrapper {
+  display: grid;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  gap:10px;
+}
+
+.projects__trending-tag {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #6d6d6d;
+}
+
+.projects__trending-description {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #6d6d6d;
+  color: #000001;
 }
